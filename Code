@@ -1,0 +1,46 @@
+!/bin/bash
+
+##initial prompt for user to initiate conversation
+
+intro(){ read hello"" ; }
+
+intro ''
+
+sleep 3s
+
+clear
+
+sleep 1s
+
+##rolls a mess of letters and symbols across the screen until its filled
+
+spooky='%@#&*)({:?+_=(1&62%$!4#$0&|\0~`*-+*^7$#$)1%@*!@1$)^3%_#$%_:7{"}?<*0>$:>
+
+for((i=0;i < ${#spooky};i+=1)) ; do
+
+echo -n "${spooky:$i:1}"
+
+sleep .015s
+
+done
+
+sleep 3s
+
+clear
+
+finalthoughts='The maze is sharp on my mind. The angles cut me when I try to t>
+
+for((i=0;i < ${#finalthoughts};i+=1)) do
+
+echo -n "${finalthoughts:$i:1}"
+
+sleep .050s
+
+done
+
+sleep 4s
+
+echo ""
+
+clear
+
